@@ -1,0 +1,7 @@
+com\taobao\controller\PictureController.class
+com\taobao\controller\ItemCatController.class
+com\taobao\controller\ContentController.class
+com\taobao\controller\ItemController.class
+com\taobao\controller\PageController.class
+com\taobao\controller\ContentCatController.class
+com\taobao\controller\ItemParamController.class

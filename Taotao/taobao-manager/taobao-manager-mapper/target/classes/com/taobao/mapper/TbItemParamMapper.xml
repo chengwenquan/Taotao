@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.taobao.mapper.TbItemParamMapper" >
+  <resultMap id="BaseResultMap" type="com.taobao.pojo.TbItemParam" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="item_cat_id" property="itemCatId" jdbcType="BIGINT" />
+    <result column="created" property="created" jdbcType="TIMESTAMP" />
+    <result column="updated" property="updated" jdbcType="TIMESTAMP" />
+  </resultMap>
+  
+  <resultMap type="com.taobao.pojo.TbItemParam" id="name_BaseResultMap" extends="BaseResultMap">
+  	<result column="name" property="itemCatName"/>
+  </resultMap>
+  
+  <resultMap type="com.taobao.pojo.TbItemParam" id="all_BaseResultMap" extends="name_BaseResultMap">
+  	<result column="param_data" property="paramData"/>
+  </resultMap>
+  
+  <resultMap type="com.taobao.pojo.TbItemParam" id="BaseResultMap1" extends="BaseResultMap">
+  	<result column="param_data" property="paramData"/>
+  </resultMap>
+  
+  <sql id="Base_Column_List" >
+    id, item_cat_id, created, updated 
+  </sql>
+  
+  
+  <select id="getCatAndName" resultMap="all_BaseResultMap">
+  	select p.id,c.name, p.item_cat_id, p.created, p.updated, p.param_data from tb_item_param p LEFT JOIN tb_item_cat c ON p.item_cat_id = c.id
+  </select>
+  
+  <select id="selectParamById" resultMap="BaseResultMap1">
+   	select id, item_cat_id, param_data, created, updated from tb_item_param where item_cat_id = #{cid}
+  </select>
+  
+  <insert id="insertParam" parameterType="com.taobao.pojo.TbItemParam">
+  	insert into tb_item_param (item_cat_id, param_data, created, updated) 
+  	values (#{itemCatId}, #{paramData}, #{created}, #{updated})
+  </insert>
+  
+  <delete id="deleteItemParam">
+  	delete from tb_item_param where id = #{id}
+  </delete>
+  
+  
+  
+</mapper>

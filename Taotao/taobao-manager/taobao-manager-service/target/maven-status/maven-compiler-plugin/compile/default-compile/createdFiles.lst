@@ -1,0 +1,4 @@
+com\taobao\service\ItemCatService.class
+com\taobao\service\PictureService.class
+com\taobao\service\impl\ItemCatServiceImpl.class
+com\taobao\service\impl\PictureServiceImpl.class

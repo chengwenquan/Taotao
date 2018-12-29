@@ -1,0 +1,8 @@
+com\taobao\order\component\impl\JedisClientSingle.class
+com\taobao\order\service\OrderService.class
+com\taobao\order\service\impl\OrderServiceImpl.class
+com\taobao\order\component\impl\JedisClientCluster.class
+com\taobao\order\scheduler\MyScheduler.class
+com\taobao\order\component\JedisClient.class
+com\taobao\order\controller\OrderController.class
+com\taobao\order\pojo\OrderInfo.class

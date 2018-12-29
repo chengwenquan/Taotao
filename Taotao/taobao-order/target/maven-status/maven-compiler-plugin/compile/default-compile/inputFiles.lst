@@ -1,0 +1,8 @@
+E:\eclipse_pro\taobao-order\src\main\java\com\taobao\order\service\impl\OrderServiceImpl.java
+E:\eclipse_pro\taobao-order\src\main\java\com\taobao\order\controller\OrderController.java
+E:\eclipse_pro\taobao-order\src\main\java\com\taobao\order\pojo\OrderInfo.java
+E:\eclipse_pro\taobao-order\src\main\java\com\taobao\order\component\impl\JedisClientCluster.java
+E:\eclipse_pro\taobao-order\src\main\java\com\taobao\order\service\OrderService.java
+E:\eclipse_pro\taobao-order\src\main\java\com\taobao\order\component\impl\JedisClientSingle.java
+E:\eclipse_pro\taobao-order\src\main\java\com\taobao\order\component\JedisClient.java
+E:\eclipse_pro\taobao-order\src\main\java\com\taobao\order\scheduler\MyScheduler.java

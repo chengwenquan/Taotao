@@ -1,0 +1,10 @@
+com\taobao\sso\component\impl\JedisClientSingle.class
+com\taobao\sso\component\impl\JedisClientCluster.class
+com\taobao\sso\service\LoginService.class
+com\taobao\sso\component\JedisClient.class
+com\taobao\sso\service\RegisterService.class
+com\taobao\sso\service\impl\LoginServiceImpl.class
+com\taobao\sso\service\impl\RegisterServiceImpl.class
+com\taobao\sso\controller\RegisterController.class
+com\taobao\sso\controller\LoginController.class
+com\taobao\sso\controller\PageController.class
